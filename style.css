@@ -72,13 +72,27 @@ iframe{
     border: solid 5px #001e6f71;
 }
 
-li{
+li {
+    box-sizing: border-box;
+    width: 600px;
+    max-width: 80%;
+    margin: 10px auto;
     list-style-type: none;
-    margin: 10px 0;
     padding: 10px;
     background-color: #001859;
     color: white;
     border-radius: 10px;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
